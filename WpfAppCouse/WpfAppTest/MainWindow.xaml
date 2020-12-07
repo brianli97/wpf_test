@@ -1,0 +1,37 @@
+﻿<Window x:Class="WpfAppTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppTest"
+        mc:Ignorable="d"
+        Title="登录界面" Height="192" Width="311" ShowInTaskbar="True" 
+        WindowStartupLocation="CenterScreen" WindowState="Normal" Topmost="True"
+        Icon="image/123.jpg" Loaded="Window_Loaded">
+    <!--网格 行和列 布局控件  Grid Window的Content-->
+    <Grid Name="grid" >
+        <Button Name="btnLogin" Content="登录" HorizontalAlignment="Left" Margin="104,123,0,0" VerticalAlignment="Top"
+                 Width="50" Height="28" Click="btnLogin_Click" IsDefault="True"
+                Foreground="Green" FontStretch="ExtraExpanded"
+                 >
+            <Button.Background>
+                <ImageBrush ImageSource="image/123.jpg"></ImageBrush>
+            </Button.Background>
+        </Button>
+        <Label Content="账号：" HorizontalAlignment="Left" Margin="48,20,0,0" VerticalAlignment="Top"
+               HorizontalContentAlignment="Right" Grid.ColumnSpan="2"/>
+        <TextBox Name="txtUName" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="23"
+                 Margin="94,20,0,0" TextWrapping="NoWrap" Text="admin" VerticalAlignment="Top" Width="120"/>
+        <Label  Content="密码：" HorizontalAlignment="Left" Margin="48,60,0,0" VerticalAlignment="Top" 
+                HorizontalContentAlignment="Right" Grid.ColumnSpan="2"/>
+        <PasswordBox Name="txtUPwd" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="23" Margin="94,60,0,0" 
+                     Password="123456" PasswordChar="*" VerticalAlignment="Top" Width="120"/>
+        <Button Name="btnCancel" Content="取消" HorizontalAlignment="Left" Margin="164,123,0,0" VerticalAlignment="Top"
+                 Width="50" Height="28" Click="btnCancel_Click" IsCancel="True"
+                 Background="YellowGreen" BorderBrush="Red" BorderThickness="3"/>
+        <RadioButton Content="管理员" GroupName="role" HorizontalAlignment="Left" IsChecked="True" Margin="61,88,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+        <RadioButton Content="学生" GroupName="role" HorizontalAlignment="Left" Margin="140,88,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+        <RadioButton Content="教师" GroupName="role" HorizontalAlignment="Left" Margin="208,88,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+
+    </Grid>
+</Window>
