@@ -1,0 +1,21 @@
+﻿<Window x:Class="WpfAppTest.ExpanderWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppTest"
+        mc:Ignorable="d"
+        Title="ExpanderWindow" Height="450" Width="800">
+    <Grid>
+        <Expander Header="用户权限" HorizontalAlignment="Left" Height="178" Margin="135,128,0,0" 
+                  VerticalAlignment="Top" Width="267" Padding="5" ExpandDirection="Down" BorderBrush="Red" BorderThickness="2"
+                  IsExpanded="True">
+            <StackPanel Background="#FFE5E5E5">
+                <CheckBox Content="管理员"/>
+                <CheckBox Content="系统管理员"/>
+                <CheckBox Content="业务员"/>
+            </StackPanel>
+        </Expander>
+
+    </Grid>
+</Window>
