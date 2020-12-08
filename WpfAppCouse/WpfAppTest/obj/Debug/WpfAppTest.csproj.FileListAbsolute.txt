@@ -222,3 +222,6 @@ D:\Gitkraken\git_code\wpf_test\WpfAppCouse\WpfAppTest\obj\Debug\Sys\UserManageWi
 D:\Gitkraken\git_code\wpf_test\WpfAppCouse\WpfAppTest\obj\Debug\Sys\MenuManageWindow.baml
 D:\Gitkraken\git_code\wpf_test\WpfAppCouse\WpfAppTest\obj\Debug\Sys\RoleWindow.baml
 D:\Gitkraken\git_code\wpf_test\WpfAppCouse\WpfAppTest\obj\Debug\Sys\UserManageWindow.baml
+D:\Gitkraken\git_code\wpf_test\WpfAppCouse\WpfAppTest\obj\Debug\MenuWindow1.g.cs
+D:\Gitkraken\git_code\wpf_test\WpfAppCouse\WpfAppTest\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Gitkraken\git_code\wpf_test\WpfAppCouse\WpfAppTest\obj\Debug\MenuWindow1.baml

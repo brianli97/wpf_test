@@ -95,6 +95,11 @@
     <Compile Include="MenuWindow.xaml.cs">
       <DependentUpon>MenuWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MenuWindow1.xaml.cs">
+      <DependentUpon>MenuWindow1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\MenuInfo.cs" />
+    <Compile Include="Models\MenuItemModel.cs" />
     <Compile Include="PageRoleInfo.xaml.cs">
       <DependentUpon>PageRoleInfo.xaml</DependentUpon>
     </Compile>
@@ -104,6 +109,7 @@
     <Compile Include="ProgressBarWindow.xaml.cs">
       <DependentUpon>ProgressBarWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="RelayCommand.cs" />
     <Compile Include="SliderWindow.xaml.cs">
       <DependentUpon>SliderWindow.xaml</DependentUpon>
     </Compile>
@@ -216,6 +222,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="MenuWindow1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="PageRoleInfo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -286,6 +296,13 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="image\123.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="image\database.ico" />
+    <Resource Include="image\explore.ico" />
+    <Resource Include="image\main.ico" />
+    <Resource Include="image\usb.ico" />
+    <Resource Include="image\wifi.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
