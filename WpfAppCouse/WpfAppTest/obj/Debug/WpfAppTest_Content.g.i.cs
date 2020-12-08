@@ -8,6 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/123.jpg")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/database.ico")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/explore.ico")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/main.ico")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/usb.ico")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/wifi.ico")]
 
 

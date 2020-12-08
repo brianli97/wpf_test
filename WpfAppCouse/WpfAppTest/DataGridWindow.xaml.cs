@@ -29,19 +29,19 @@ namespace WpfAppTest
         /// 获取用户信息列表
         /// </summary>
         /// <returns></returns>
-        private List<UserInfo> GetUserList()
+        private List<UserInfoNew> GetUserList()
         {
-            List<UserInfo> list = new List<UserInfo>();
+            List<UserInfoNew> list = new List<UserInfoNew>();
             string sql = "select UserId,UserName,UserState,UserAge,Deptid from UserInfos where Deptid>0";
             SqlDataReader dr = SqlHelper.ExecuteReader(sql, 1);
             while (dr.Read())
             {
-                UserInfo user = new UserInfo();
+                UserInfoNew user = new UserInfoNew();
                 user.UserId = (int)dr["UserId"];
                 user.UserName = dr["UserName"].ToString();
                 user.UserState = (int)dr["UserState"] == 1 ? true : false;
                 user.UserAge = (int)dr["UserAge"];
-                user.Deptid = (int)dr["Deptid"];
+                user.DeptId = (int)dr["Deptid"];
                 list.Add(user);
             }
             dr.Close();
@@ -56,7 +56,7 @@ namespace WpfAppTest
             while (dr.Read())
             {
                 DeptInfo dept = new DeptInfo();
-                dept.DeptId = (int)dr["DeptId"];
+                dept.DeptId = (int)dr["Deptid"];
                 dept.DeptName = dr["DeptName"].ToString();
                 list.Add(dept);
             }
@@ -65,12 +65,55 @@ namespace WpfAppTest
 
         }
 
-        
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            //首先，设置comboBox列的数据源
+            //colDept.DisplayMemberPath = "DeptName";
+            //colDept.SelectedValuePath = "DeptId";
+            //colDept.ItemsSource = GetDepts();
+
+            //没有显示下拉框？？？？
+            //如果没有设置列的Name属性
+            //DataGridComboBoxColumn deptCol = dgList.Columns[3] as DataGridComboBoxColumn;
+            //deptCol.ItemsSource = GetDepts();
+
+            //dgList.ItemsSource = GetUserList();
+
+
+            //初始化DGVModel
+            DGVModel vmodel = new DGVModel();
+            vmodel.UserList = GetUserList();
+            vmodel.DeptList = GetDepts();
+
+            this.DataContext = vmodel;
+        }
     }
+
+    public class UserInfoNew
+    {
+        public int UserId { get; set; }
+        public string UserName { get; set; }
+        public bool UserState { get; set; }
+        public int UserAge { get; set; }
+        public int DeptId { get; set; }
+
+    }
+
     public class DeptInfo
     {
         public int DeptId { get; set; }
         public string DeptName { get; set; }
 
     }
+
+
+    /// <summary>
+    /// Window的数据上下文对象
+    /// </summary>
+    public class DGVModel
+    { 
+        public List<UserInfoNew> UserList { get; set; }
+        public List<DeptInfo> DeptList { get; set; }
+    }
+
 }

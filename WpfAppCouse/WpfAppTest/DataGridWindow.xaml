@@ -5,11 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAppTest"
         mc:Ignorable="d"
-        Title="DataGridWindow" Height="450" Width="800">
+        Title="DataGridWindow" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
         <DataGrid HeadersVisibility="All" AutoGenerateColumns="False" AlternatingRowBackground="YellowGreen" CanUserAddRows="True" 
-                  IsReadOnly="True" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Visible" AlternationCount="2" GridLinesVisibility="Horizontal"
-                  SelectionUnit="Cell" SelectionMode="Single">
+                  IsReadOnly="False" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" AlternationCount="3" GridLinesVisibility="Horizontal"
+                  SelectionUnit="Cell" SelectionMode="Single" Name="dgList" ItemsSource="{Binding UserList}"
+                  RowHeaderWidth="20">
             <DataGrid.RowStyle>
                 <Style TargetType="DataGridRow">
                     <Setter Property="Background" Value="Transparent"/>
@@ -19,6 +20,9 @@
                         </Trigger>
                         <Trigger Property="ItemsControl.AlternationIndex" Value="1">
                             <Setter Property="Background" Value="LightBlue"/>
+                        </Trigger>
+                        <Trigger Property="ItemsControl.AlternationIndex" Value="2">
+                            <Setter Property="Background" Value="Orange"/>
                         </Trigger>
                     </Style.Triggers>
                 </Style>
@@ -32,15 +36,33 @@
                         </DataTemplate>
                     </DataGridTextColumn.HeaderTemplate>
                 </DataGridTextColumn>
+                
                 <DataGridCheckBoxColumn Header="状态" Binding="{Binding UserState}"/>
-                <DataGridComboBoxColumn Header="部门" x:Name="colDept" SelectedValueBinding="{Binding Deptid}"  Width="100" 
-                                        DisplayMemberPath="DeptName" SelectedValuePath="DeptId"/>
+                <DataGridComboBoxColumn Header="部门"  SelectedValueBinding="{Binding DeptId}"  Width="100" 
+                                        DisplayMemberPath="DeptName" SelectedValuePath="DeptId" >
+                    <DataGridComboBoxColumn.ElementStyle>
+                        <Style TargetType="ComboBox">
+                            <Setter Property="ItemsSource" Value="{Binding DataContext.DeptList,RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=Window}}"/>
+                        </Style>
+                    </DataGridComboBoxColumn.ElementStyle>
+                    <DataGridComboBoxColumn.EditingElementStyle>
+                        <Style TargetType="ComboBox">
+                            <Setter Property="ItemsSource" Value="{Binding DataContext.DeptList,RelativeSource={RelativeSource Mode=FindAncestor,AncestorType=Window}}"/>
+                        </Style>
+                    </DataGridComboBoxColumn.EditingElementStyle>
+                </DataGridComboBoxColumn>
+                
                 <DataGridTemplateColumn Header="年龄" Width="60">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
                             <Label Content="{Binding UserAge}" Foreground="Green" Background="LightBlue"/>
                         </DataTemplate>
                     </DataGridTemplateColumn.CellTemplate>
+                    <DataGridTemplateColumn.CellEditingTemplate>
+                        <DataTemplate>
+                            <TextBox Text="{Binding UserAge}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellEditingTemplate>
                 </DataGridTemplateColumn>
             </DataGrid.Columns>
         </DataGrid>

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\360安全浏览器下载\Study\WpfAppCouse\WpfAppTest\obj\Debug\
+D:\Gitkraken\git_code\wpf_test\WpfAppCouse\WpfAppTest\obj\Debug\
 WpfAppTest
 none
 false
 DEBUG;TRACE
-D:\360安全浏览器下载\Study\WpfAppCouse\WpfAppTest\App.xaml
-22-987374829
+D:\Gitkraken\git_code\wpf_test\WpfAppCouse\WpfAppTest\App.xaml
+261034567215
 
-28-377649406
-20-911104745
-BorderWindow.xaml;CanvasWindow.xaml;CheckBoxWindow.xaml;ComboBoxWindow.xaml;DataGridWindow.xaml;DatePickerWindow.xaml;DockPanelWindow.xaml;ExpanderWindow.xaml;FrameWindow.xaml;GridWindow.xaml;GroupBoxWindow.xaml;ImageWindow.xaml;ListBoxWindow.xaml;ListViewWindow.xaml;MainWindow.xaml;PageRoleInfo.xaml;PageUserInfo.xaml;ProgressBarWindow.xaml;SliderWindow.xaml;StackPanelWindow.xaml;TabControlWindow.xaml;WrapPanelWindow.xaml;
+32-392315907
+202048038870
+BorderWindow.xaml;CanvasWindow.xaml;CheckBoxWindow.xaml;ComboBoxWindow.xaml;DataGridWindow.xaml;DatePickerWindow.xaml;DockPanelWindow.xaml;ExpanderWindow.xaml;FrameWindow.xaml;GridWindow.xaml;GroupBoxWindow.xaml;ImageWindow.xaml;ListBoxWindow.xaml;ListViewWindow.xaml;MainWindow.xaml;MenuWindow.xaml;PageRoleInfo.xaml;PageUserInfo.xaml;ProgressBarWindow.xaml;SliderWindow.xaml;StackPanelWindow.xaml;Sys\MenuManageWindow.xaml;Sys\RoleWindow.xaml;Sys\UserManageWindow.xaml;TabControlWindow.xaml;WrapPanelWindow.xaml;
 
 True
 

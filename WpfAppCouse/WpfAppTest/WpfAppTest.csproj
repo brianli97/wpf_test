@@ -92,6 +92,9 @@
     <Compile Include="ListViewWindow.xaml.cs">
       <DependentUpon>ListViewWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MenuWindow.xaml.cs">
+      <DependentUpon>MenuWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="PageRoleInfo.xaml.cs">
       <DependentUpon>PageRoleInfo.xaml</DependentUpon>
     </Compile>
@@ -107,6 +110,15 @@
     <Compile Include="SqlHelper.cs" />
     <Compile Include="StackPanelWindow.xaml.cs">
       <DependentUpon>StackPanelWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\MenuManageWindow.xaml.cs">
+      <DependentUpon>MenuManageWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\RoleWindow.xaml.cs">
+      <DependentUpon>RoleWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sys\UserManageWindow.xaml.cs">
+      <DependentUpon>UserManageWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="TabControlWindow.xaml.cs">
       <DependentUpon>TabControlWindow.xaml</DependentUpon>
@@ -200,6 +212,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="MenuWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="PageRoleInfo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -217,6 +233,18 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="StackPanelWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Sys\MenuManageWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Sys\RoleWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Sys\UserManageWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

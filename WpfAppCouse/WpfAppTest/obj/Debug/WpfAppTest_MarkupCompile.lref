@@ -15,6 +15,7 @@ FD:\Gitkraken\git_code\wpf_test\WpfAppCouse\WpfAppTest\ImageWindow.xaml;;
 FD:\Gitkraken\git_code\wpf_test\WpfAppCouse\WpfAppTest\ListBoxWindow.xaml;;
 FD:\Gitkraken\git_code\wpf_test\WpfAppCouse\WpfAppTest\ListViewWindow.xaml;;
 FD:\Gitkraken\git_code\wpf_test\WpfAppCouse\WpfAppTest\MainWindow.xaml;;
+FD:\Gitkraken\git_code\wpf_test\WpfAppCouse\WpfAppTest\MenuWindow.xaml;;
 FD:\Gitkraken\git_code\wpf_test\WpfAppCouse\WpfAppTest\PageRoleInfo.xaml;;
 FD:\Gitkraken\git_code\wpf_test\WpfAppCouse\WpfAppTest\PageUserInfo.xaml;;
 FD:\Gitkraken\git_code\wpf_test\WpfAppCouse\WpfAppTest\ProgressBarWindow.xaml;;
@@ -22,4 +23,7 @@ FD:\Gitkraken\git_code\wpf_test\WpfAppCouse\WpfAppTest\SliderWindow.xaml;;
 FD:\Gitkraken\git_code\wpf_test\WpfAppCouse\WpfAppTest\StackPanelWindow.xaml;;
 FD:\Gitkraken\git_code\wpf_test\WpfAppCouse\WpfAppTest\TabControlWindow.xaml;;
 FD:\Gitkraken\git_code\wpf_test\WpfAppCouse\WpfAppTest\WrapPanelWindow.xaml;;
+FD:\Gitkraken\git_code\wpf_test\WpfAppCouse\WpfAppTest\Sys\MenuManageWindow.xaml;;
+FD:\Gitkraken\git_code\wpf_test\WpfAppCouse\WpfAppTest\Sys\RoleWindow.xaml;;
+FD:\Gitkraken\git_code\wpf_test\WpfAppCouse\WpfAppTest\Sys\UserManageWindow.xaml;;
 
